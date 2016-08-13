@@ -671,3 +671,15 @@ a:hover .backButton:after, a:hover .top:after, a:hover .bottom:after, a:hover .r
     margin: 1em auto;
 }
 
+.paragraphPlus {
+    font-size: 2rem;
+}
+
+.center {
+    text-align: center;
+}
+
+/*.tag {
+    background: #EFF169;
+    padding: 0 1rem;
+}*/
