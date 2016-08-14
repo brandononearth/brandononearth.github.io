@@ -4,11 +4,19 @@ html, h1, h2, h3, h4, h5, h6, p, ol {
     font-family: 'Nunito', Helvetica, sans-serif;
 }
 
+
+
 header {
     text-align: center;
     line-height: 1.2;
     max-width: none; 
-    height: 100vh;    
+    height: 90vh;    
+}
+
+@media (min-width: 40rem){
+    header {
+        height: 100vh;
+    }
 }
 
 body {
@@ -85,6 +93,7 @@ header#caseStudy3 {
 .caseStudyTitle h2 {
     margin: 0 25% 0 0;
     color: #ffffff;
+    font-size: 3.5rem;
 }
 .caseStudyTitle h1{
     color: #ffffff;
@@ -411,13 +420,22 @@ p.verticalCenter {
     padding: 1em 0;
 }
 
-.arrow {
- position: relative;
-    text-align: center;
-    top: 77%;
-    transform: translateY(-77%);
-    color: #ffffff;
-    margin: 0 5em;
+@media (max-width: 40rem){
+    .arrow {
+        display: none;
+    }
+}
+
+@media (min-width: 40rem){
+    .arrow{
+        position: relative;
+        text-align: center;
+        top: 75%;
+        transform: translateY(-75%)
+        color: #ffffff;
+        margin: 0 4em;
+        overflow: auto;
+    }
 }
 
 .bounce {
@@ -644,15 +662,21 @@ img.messengerCode {
 .backButton {
   display: inline-block;
   margin: 1.5em;
- position: fixed;
--webkit-backface-visibility: hidden;
--webkit-transform: translateZ(0);
+  position: fixed;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  opacity: .9;
+  z-index: 9999;
 }
 
 .backButton:hover {
-  opacity: .6;
+  opacity: .75;
 }
 
+backButtonPad {
+    position: relative;
+    z-index: 9999;
+}
 .widgets{
     max-width: 125px;
     margin: 1em auto;
@@ -660,6 +684,7 @@ img.messengerCode {
 
 .paragraphPlus {
     font-size: 2rem;
+    text-align: center;
 }
 
 .center {
