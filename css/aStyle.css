@@ -45,6 +45,11 @@ header#main1 {
     background-image: url(../images/bgMain.png);
 }
 
+main#main1 {
+    background-color: #fafafa;
+    background-image: url(../images/bgMain.png);
+}
+
 .mainTitle {
     position: relative;
     text-align: center;
