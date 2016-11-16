@@ -454,6 +454,15 @@ p.verticalCenter {
     .fullNameMain:after {
         content: 'B';
     }
+    .nav {
+        font-size: 1.8em;
+    }
+    .row.column.ab {
+        padding: 0;
+    }
+    .mainTitle {
+        top: 45%;
+    }
 }
 
 @media (min-width: 40rem){
