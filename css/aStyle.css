@@ -537,6 +537,9 @@ img.messengerCode {
 .ab {
     position: absolute;
     margin-top: -2em;
+    left:0;
+    top:0;
+    right:0;
 }
 
 .article.one {
