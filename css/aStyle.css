@@ -2,12 +2,12 @@
 html, h1, h2, h3, h4, h5, h6, p, ol {
     color: #333;
     font-family: 'Nunito', Helvetica, sans-serif;
+    letter-spacing: 0.45px;
 }
 
 
 
 header {
-    text-align: center;
     line-height: 1.2;
     max-width: none; 
     height: 90vh;    
@@ -41,8 +41,9 @@ p {
     padding: 0;
 }
 header#main1 {
-    background-color: #F7CA18;
-    background-image: url(../images/bgMain.png);
+    background-color: #C8F7C5;
+    background-image: url(../images/wov.png);
+    background-blend-mode: multiply;
 }
 
 .header#main1:after{
@@ -58,7 +59,6 @@ main#main1 {
 
 .mainTitle {
     position: relative;
-    text-align: center;
     top: 50%;
     transform: translateY(-50%);
     color: #333333;
@@ -374,7 +374,7 @@ p.verticalCenter {
 }
 
 .fullNameMain:after {
-    content: 'BH';
+    content: ' ';
 }
 
 .description {
@@ -389,12 +389,11 @@ p.verticalCenter {
 }
 
 .nav{
-    text-align: center;
     font-size: 2.5em;
 }
 
 .linkA{
-    border-bottom: 6px solid #F7CA18; 
+    border-bottom: 6px solid #C8F7C5; 
     color: #333333;
 }
 .linkA:hover{
@@ -413,7 +412,7 @@ p.verticalCenter {
 
 @media (hover:none), (hover:on-demand) {
     .linkA:hover{ 
-        border-bottom: 6px solid #F7CA18; 
+        border-bottom: 6px solid #C8F7C5; 
         color: #333333;
     }
 }
@@ -573,8 +572,8 @@ img.messengerCode {
 }
 
 .article.three {
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/article_6emails.jpeg) no-repeat center center;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/article_6emails.jpeg) no-repeat center center;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/article_holdMusic.jpeg) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/article_holdMusic.jpeg) no-repeat center center;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -605,6 +604,21 @@ img.messengerCode {
 .article.five {
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/article_golden.png) no-repeat center center;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/article_golden.png) no-repeat center center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    line-height: 1.2;
+    max-width: 100%; 
+    min-height: 200px;
+    height: 250px;
+    max-height: 250px;  
+    position: relative;
+}
+
+.article.six {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/article_6emails.jpeg) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/article_6emails.jpeg) no-repeat center center;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -741,7 +755,6 @@ backButtonPad {
 }
 
 .personSummary {
-    text-align: center;
     margin-bottom: 1em;
     font-size: 1.5em;
 }
